@@ -29,3 +29,7 @@ def Episode003():
     """Episode003: Across The Street"""
     # Displays the landing page. The user can click on the episodes they want.
     return render_template('Episode003.html')
+
+
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0', port=os.environ.get('PORT', 5000))
